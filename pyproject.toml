@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fmz_type"
+version = "0.0.1"
+description = ""
+authors = ["shijianhuai <shijianhuai99@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fmz_type", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
